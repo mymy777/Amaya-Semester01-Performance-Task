@@ -1,8 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://duemjd0qhekrw"]
+[gd_scene load_steps=3 format=3 uid="uid://duemjd0qhekrw"]
 
 [ext_resource type="Texture2D" uid="uid://bwmny50vdxvr1" path="res://assets/wallpaperCabin.jpg" id="1_85gfb"]
+[ext_resource type="PackedScene" uid="uid://be77rumg2wgqe" path="res://player.tscn" id="2_vw70n"]
 
 [node name="World" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("2_vw70n")]
+scale = Vector2(0.61, 0.61)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(0.61, 0.61)
