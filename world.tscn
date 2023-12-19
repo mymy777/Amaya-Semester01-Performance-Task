@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://duemjd0qhekrw"]
+[gd_scene load_steps=4 format=3 uid="uid://duemjd0qhekrw"]
 
 [ext_resource type="Texture2D" uid="uid://bwmny50vdxvr1" path="res://assets/wallpaperCabin.jpg" id="1_85gfb"]
 [ext_resource type="PackedScene" uid="uid://be77rumg2wgqe" path="res://player.tscn" id="2_vw70n"]
+[ext_resource type="PackedScene" uid="uid://bxi21uf4jn15p" path="res://enemy.tscn" id="3_4qwcq"]
 
 [node name="World" type="Node2D"]
 
@@ -12,3 +13,5 @@ scale = Vector2(0.61, 0.61)
 scale = Vector2(0.61, 0.61)
 texture = ExtResource("1_85gfb")
 centered = false
+
+[node name="Enemy" parent="." instance=ExtResource("3_4qwcq")]

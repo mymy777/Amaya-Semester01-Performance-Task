@@ -18,4 +18,6 @@ func _process(delta):
 	if Input.is_action_pressed("move_up"):
 		velocity.y += 1
 		
+	if  "Player" CollisionObject2D("Enemy")
+		
 	
